@@ -1,0 +1,159 @@
+Here's a structured and well-formatted version of the **Power Automate Actions** list that you can save for future reference.  
+
+---
+
+# **Power Automate Actions - Complete List with Explanation & Examples**  
+
+## **🔹 Core Actions (Built-in Actions)**  
+These actions are available by default and are used for general logic and data manipulation.  
+
+### **1️⃣ Control Actions (For Logic & Branching)**  
+- **Condition** → Used for If-Else logic.  
+  - *Example:* If an employee’s leave balance is less than 5 days, send an approval request to HR; otherwise, approve automatically.  
+- **Switch** → Used when multiple conditions need to be checked.  
+  - *Example:* If the request is for IT, send it to the IT team; if HR, send it to HR.  
+- **Apply to Each** → Loops through a collection (array).  
+  - *Example:* For each row in an Excel file, create a new item in SharePoint.  
+- **Do Until** → Loops until a condition is met.  
+  - *Example:* Keep checking an approval status until it is approved.  
+- **Scope** → Groups multiple actions together.  
+  - *Example:* Combine all error-handling steps in a single scope.  
+
+---
+
+### **2️⃣ Variable Actions (For Storing & Manipulating Data)**  
+- **Initialize Variable** → Creates a variable to store data.  
+  - *Example:* Store the current user’s email in a variable.  
+- **Set Variable** → Assigns a new value to a variable.  
+  - *Example:* Set a variable “ApprovalStatus” to “Approved.”  
+- **Increment/Decrement Variable** → Increases or decreases a variable’s value.  
+  - *Example:* Increase a counter every time an email is sent.  
+- **Append to String Variable** → Adds text to a string variable.  
+  - *Example:* Store a list of rejected employee requests in a single variable.  
+
+---
+
+### **3️⃣ Data Operations (For Handling JSON, Text, and Collections)**  
+- **Compose** → Stores a value temporarily for reuse.  
+  - *Example:* Store a complex JSON structure in a compose action.  
+- **Parse JSON** → Extracts data from JSON format.  
+  - *Example:* Parse API response data from a weather service.  
+- **Select** → Transforms array data.  
+  - *Example:* Extract only email addresses from a list of users.  
+- **Filter Array** → Retrieves specific items from an array.  
+  - *Example:* Get only pending leave requests from a dataset.  
+
+---
+
+### **4️⃣ Date & Time Actions (For Working with Time Values)**  
+- **Convert Time Zone** → Changes the time zone of a date/time value.  
+  - *Example:* Convert UTC time to Indian Standard Time (IST).  
+- **Add to Time** → Adds time to a given date.  
+  - *Example:* Add 30 days to today’s date for a task deadline.  
+- **Subtract from Time** → Subtracts time from a given date.  
+  - *Example:* Subtract 7 days to find the last week's date.  
+
+---
+
+### **5️⃣ HTTP Actions (For Calling External APIs)**  
+- **HTTP** → Sends an API request.  
+  - *Example:* Call a weather API to get live updates.  
+- **HTTP with Azure AD** → Calls APIs with authentication.  
+  - *Example:* Retrieve user details from Azure AD securely.  
+
+---
+
+## **🔹 Microsoft 365 Actions**  
+
+### **6️⃣ SharePoint Actions (For Working with SharePoint Data)**  
+- **Get Items** → Retrieves items from a SharePoint list.  
+  - *Example:* Fetch all open support tickets from a SharePoint list.  
+- **Create Item** → Adds a new item to a SharePoint list.  
+  - *Example:* Create a new entry when a form is submitted.  
+- **Update Item** → Modifies an existing SharePoint list item.  
+  - *Example:* Update an approval request’s status to “Approved.”  
+- **Delete Item** → Removes an item from a SharePoint list.  
+  - *Example:* Remove a completed task from the list.  
+
+---
+
+### **7️⃣ Outlook & Email Actions (For Automating Emails)**  
+- **Send an Email** → Sends an email using Outlook or Gmail.  
+  - *Example:* Send approval status updates to employees.  
+- **Get Emails** → Retrieves emails from an inbox.  
+  - *Example:* Fetch unread emails for processing in Power Automate.  
+- **Delete Email** → Deletes an email from an inbox.  
+  - *Example:* Automatically delete spam emails from a folder.  
+
+---
+
+### **8️⃣ Power Apps Actions (For Integrating with Power Apps)**  
+- **PowerApps (V2)** → Triggers a flow from Power Apps.  
+  - *Example:* Start an approval process when a user submits a form in Power Apps.  
+- **Respond to PowerApps** → Sends a response back to Power Apps.  
+  - *Example:* Send approval status back to Power Apps.  
+
+---
+
+### **9️⃣ Microsoft Teams Actions (For Automation in Teams)**  
+- **Post a Message** → Sends a message in a Teams channel.  
+  - *Example:* Notify a team when a document is uploaded.  
+- **Create a Team** → Creates a new Microsoft Teams group.  
+  - *Example:* Automatically create a team when a new project starts.  
+- **Add Member to Team** → Adds a user to a team.  
+  - *Example:* Add a new employee to the IT support team.  
+
+---
+
+### **🔟 Dataverse Actions (For Working with Microsoft Dataverse)**  
+- **List Rows** → Retrieves rows from a Dataverse table.  
+  - *Example:* Fetch all customer orders.  
+- **Add a Row** → Inserts a new row.  
+  - *Example:* Add a new lead into Dataverse CRM.  
+- **Update a Row** → Modifies an existing row.  
+  - *Example:* Change a lead’s status from “New” to “Qualified.”  
+
+---
+
+## **🔹 External & Third-Party Integrations**  
+
+### **1️⃣1️⃣ SQL Server Actions (For Working with SQL Databases)**  
+- **Execute a SQL Query** → Runs a query against a SQL database.  
+  - *Example:* Get all pending invoices from a database.  
+- **Insert Row** → Adds a record to a SQL table.  
+  - *Example:* Add a new employee record.  
+- **Update Row** → Modifies a record in a SQL table.  
+  - *Example:* Update salary information for an employee.  
+
+---
+
+### **1️⃣2️⃣ OneDrive Actions (For Working with Cloud Storage)**  
+- **Create File** → Creates a file in OneDrive.  
+  - *Example:* Save an email attachment to OneDrive automatically.  
+- **Delete File** → Removes a file from OneDrive.  
+  - *Example:* Delete old backup files automatically.  
+- **Get File Content** → Retrieves file content.  
+  - *Example:* Extract text from a PDF file.  
+
+---
+
+### **1️⃣3️⃣ Social Media Actions (For Posting & Retrieving Data)**  
+- **Post a Tweet** → Sends a tweet from an account.  
+  - *Example:* Auto-post company updates on Twitter.  
+- **Create a LinkedIn Post** → Creates a post on LinkedIn.  
+  - *Example:* Publish job openings on LinkedIn.  
+
+---
+
+### **1️⃣4️⃣ AI Builder Actions (For AI-Powered Automation)**  
+- **Extract Text from Image** → Uses OCR to extract text.  
+  - *Example:* Read invoices and store data in SharePoint.  
+- **Analyze Sentiment** → Detects sentiment in text.  
+  - *Example:* Analyze customer feedback and flag negative comments.  
+
+---
+
+## **📌 Summary**  
+Power Automate provides **hundreds of actions** across **built-in controls, Microsoft 365, Dataverse, external services, and AI Builder**.  
+
+✅ **Copy and save this document for reference in interviews!** 🚀
