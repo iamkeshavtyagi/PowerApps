@@ -1,0 +1,104 @@
+Some commonly used actions include:
+✅ Send an email (Outlook, Gmail, etc.) – To notify users.
+✅ Create an item (SharePoint, Dataverse, etc.) – To save records.
+✅ Update an item (SharePoint, Dataverse, SQL, etc.) – To modify existing records.
+✅ Apply to each – Loops through a collection of items.
+✅ Condition – Executes different actions based on True/False conditions.
+✅ Delay – Pauses a flow for a set time.
+✅ Parse JSON – Extracts data from JSON responses.
+✅ HTTP Request – Calls external APIs.
+✅ Start and wait for an approval – Sends an approval request to users.
+✅ Append to array variable – Stores data dynamically in an array.
+
+
+✅ What is the difference between “Apply to Each” and “Do Until” actions?
+Answer:
+
+Apply to Each: Loops through a list of items and runs actions on each item.
+Do Until: Runs until a condition is met (e.g., keep checking approval status until it is "Approved").
+Example:
+
+Apply to Each: Process each item in a SharePoint list.
+Do Until: Keep checking an order status until it becomes "Shipped".
+
+✅ What is the “Terminate” action in Power Automate?
+Answer:
+The Terminate action is used to stop a flow immediately. It can return a status like Succeeded, Failed, or Cancelled.
+
+✅ What is the “Scope” action in Power Automate?
+Answer:
+The Scope action groups multiple actions together. It is useful for error handling by using "Try", "Catch", and "Finally" scopes.
+
+✅What are “Parallel Branches” in Power Automate?
+Answer:
+Parallel branches allow two or more actions to run simultaneously instead of sequentially.
+
+Example:
+Send an email and create a SharePoint item at the same time.
+
+✅ What is the “Compose” action used for?
+Answer:
+The Compose action is used to store, format, or transform data without creating a variable.
+
+Example:
+Use Compose to extract the year from a date:
+📌 formatDateTime(utcNow(), 'yyyy')
+
+✅ What is the difference between “Filter Array” and “Condition” action?
+Answer:
+
+Filter Array: Filters data from an array based on a condition.
+Condition: Evaluates a single condition and executes different actions based on True/False.
+Example:
+
+Use Filter Array to find all orders where status = “Pending”.
+Use Condition to check if an order value > $1000 and take action.
+
+✅ What is the “Switch” action?
+Answer:
+The Switch action is used to evaluate a single variable and execute different actions based on its value.
+
+Example:
+
+If Status = Approved, send an email.
+If Status = Rejected, notify HR.
+If Status = Pending, wait for response.
+
+🔟 What is the “Retry Policy” in Power Automate?
+Answer:
+The Retry Policy is used to automatically retry a failed action.
+You can configure:
+✅ Default: Retries for transient failures.
+✅ Fixed Interval: Retries after a set time.
+✅ Exponential Backoff: Gradually increases the retry time.
+
+Example:
+If an HTTP request fails, Power Automate can retry up to 4 times before failing.
+
+✅ What are connectors in Power Automate? Explain the difference between standard and premium connectors.
+Answer:
+Connectors allow Power Automate to interact with different apps and services. There are two types:
+
+Standard Connectors (Free) → Available with basic licenses (e.g., SharePoint, Outlook, Excel).
+Premium Connectors (Paid) → Require a premium license (e.g., Dataverse, SQL Server, Salesforce).
+💡 Example:
+
+Standard: A flow that triggers when an email is received in Outlook.
+Premium: A flow that retrieves data from an Azure SQL database (requires a premium license).
+
+ ✅ How does Power Automate integrate with SharePoint, Power Apps, and Dataverse?
+ Answer:
+Power Automate integrates seamlessly with Microsoft 365 apps:
+
+SharePoint: Automate document approvals, notifications, and data updates.
+
+🔹 Example: When a new item is added to a SharePoint list, send an approval email.
+Power Apps: Trigger flows from an app to perform background actions like sending an email.
+
+🔹 Example: A Power Apps button that submits a leave request and notifies the manager.
+Dataverse: Retrieve, update, and delete records in a structured way.
+
+🔹 Example: A flow that updates Dataverse records when a sales order is approved.
+
+
+
